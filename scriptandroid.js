@@ -1,31 +1,37 @@
 // Mengambil input pencarian dan menambahkan event listener untuk pencarian produk
-document.getElementById("searchInput").addEventListener("input", function() {
-    const searchQuery = this.value.toLowerCase();  // Mengonversi input ke lowercase
-    const products = document.querySelectorAll(".product");  // Mengambil semua elemen produk
+function searchSmartphones() {
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let products = document.getElementsByClassName('product');
+    
+    for (let i = 0; i < products.length; i++) {
+      // Cari berdasarkan nama produk
+      let name = products[i].getElementsByClassName('product-name')[0];
+      
+      // Cari berdasarkan spesifikasi produk
+      let specBox = products[i].getElementsByClassName('spec-box')[0];
+      
+      // Cek apakah input ada di nama atau spesifikasi
+      let foundInName = name && name.innerHTML.toLowerCase().indexOf(input) > -1;
+      let foundInSpecs = specBox && specBox.innerHTML.toLowerCase().indexOf(input) > -1;
+      
+      // Tampilkan produk jika ditemukan dalam nama atau spesifikasi
+      if (foundInName || foundInSpecs) {
+        products[i].style.display = ''; // Tampilkan produk
+      } else {
+        products[i].style.display = 'none'; // Sembunyikan produk
+      }
+    }
+  }
+  
+  // Tambahkan event listener untuk tombol pencarian dan input
+  document.querySelector('.search-bar button').addEventListener('click', searchSmartphones);
+  
+  document.getElementById('searchInput').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      searchSmartphones();
+    }
+  });
 
-    products.forEach(product => {
-        const productName = product.querySelector("a").innerText.toLowerCase();  // Nama produk
-        if (productName.includes(searchQuery)) {
-            product.style.display = "flex";  // Menampilkan produk jika sesuai
-        } else {
-            product.style.display = "none";  // Menyembunyikan produk jika tidak sesuai
-        }
-    });
-});
-
-document.getElementById("searchInput").addEventListener("input", function() {
-    const searchQuery = this.value.toLowerCase();  // Mengonversi input ke lowercase
-    const products = document.querySelectorAll(".product");  // Mengambil semua elemen produk
-
-    products.forEach(product => {
-        const productName = product.querySelector("ul").innerText.toLowerCase();  // Nama produk
-        if (productName.includes(searchQuery)) {
-            product.style.display = "flex";  // Menampilkan produk jika sesuai
-        } else {
-            product.style.display = "none";  // Menyembunyikan produk jika tidak sesuai
-        }
-    });
-});
 
 // Fungsi untuk mengubah status spesifikasi aktif/tidak aktif
 function toggleSpec(productElement) {

@@ -409,13 +409,6 @@
   background-color: #45a049;
 }
 
-.menu-list {
-  display: flex;
-  justify-content: space-evenly;
-}
-.menu-list ul {
-  list-style: none;
-}
 .store{
   margin-left: 5rem;
   padding-top: 20px;
@@ -423,16 +416,13 @@
 }
 .store p{
   margin-left: 20px;
-}
-.menu-items {
-  margin-top: 30px;
-  background-color:  rgba(0, 0, 0, 0.099);
-}
+} 
 .footer p{
   text-align: center;
 }
 .footer {
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.099);
 }
 .menuopen {
   display: none;
