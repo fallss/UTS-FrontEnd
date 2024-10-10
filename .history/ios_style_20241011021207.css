@@ -332,12 +332,10 @@ span {
 
 .footer p{
     text-align: center;
-}
-.footer {
+  }
+  .footer {
     padding: 20px;
-    background-color:  rgba(0, 0, 0, 0.099);
-}
-
+  }
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar ul {
