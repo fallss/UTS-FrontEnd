@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - SmartPhone</title>
+    <link rel="stylesheet" href="./styleregister.css" />
+</head>
+<body>
+    <!-- Header / Bagian Paling Atas Website -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/Logo15.png" alt="logo" /></a>
+            </div>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="android.html">Android</a></li>
+                <li><a href="index.html">iOS</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="login.html">Login</a></li>
+                <img class="cross" src="./images/close-116-512.png" alt="cross" />
+            </ul>
+            <div class="nav-icons">
+                <img src="./images/search-icon-png-9969(1).png" alt="search" />
+                <img src="./images/shopping-bag.png" alt="shopping" />
+                <img class="menuopen" src="./images/hamburger-menu-5.png" alt="menu"/>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Form Register -->
+    <div class="login-container">
+        <h2>Register</h2>
+        <form action="index.html">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required />
+            </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>
+          Copyright © 2024 YourPhone. All rights reserved. Privacy Policy
+          Terms of Use Sales Policy Legal Site Map
+        </p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
