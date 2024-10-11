@@ -188,13 +188,6 @@ label {
   display: none;
 }
 
-.menuopen {
-  display: none;
-}
-.cross {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .contact-wrap {
     padding: 1.5rem;

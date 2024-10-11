@@ -188,12 +188,7 @@ label {
   display: none;
 }
 
-.menuopen {
-  display: none;
-}
-.cross {
-  display: none;
-}
+.me
 
 @media (max-width: 768px) {
   .contact-wrap {
