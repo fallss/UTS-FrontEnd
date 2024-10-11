@@ -1,121 +1,77 @@
-<link rel="stylesheet" href="map.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="map.css">
 
-<!-- Contact Section -->
-<section id="contact" class="position-relative section">
-    <div class="container text-center">
-        <h6 class="subtitle">Contact</h6>
-        <h6 class="section-title mb-4">Get In Touch With Me</h6>
-        <p class="mb-5 pb-4">
-            "Have a project in mind? Let’s talk! I’m here to turn your ideas into reality" <br />
-            Reach out today and together we can create something extraordinary.
-        </p>
+    <title>Contact</title>
+  </head>
+    <div class="content">
+      <div class="container">
+        <div class="row align-items-stretch no-gutters contact-wrap">
+          <div class="col-md-12">
+            <div class="form h-100">
+              <h3>Contact</h3>
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="" class="col-form-label">Name *</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="" class="col-form-label">Email *</label>
+                    <input type="text" class="form-control" name="email" id="email"  placeholder="Your email">
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="" class="col-form-label">Phone Number *</label>
+                    <input type="text" class="form-control" name="phone Number" id="phone Number"  placeholder="Your phone Number">
+                  </div>
+                </div>
 
-        <div class="contact text-left">
-            <div class="form">
-                <h6 class="subtitle">Available in my Company</h6>
-                <h6 class="section-title mb-4">Get In Touch</h6>
+                <div class="row">
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="budget" class="col-form-label">Budget</label>
+                    <select class="custom-select" id="budget" name="budget">
+                      <option selected>Choose...</option>
+                      <option value="$1000 below">< $1,000</option>
+                      <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                      <option value="$5,000 - $15,000">$5,000 - $15,000</option>
+                      <option value="$15,000 - $25,000">$15,000 - $25,000</option>
+                      <option value="$25,000 >">$25,000 ></option>
+                    </select>
+                  </div>
+                </div>
 
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" class="sr-only">Email Address</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Enter email"
-                            required
-                        />
-                    </div>
-                    <div class="form-group">
-                        <label for="contactMessage" class="sr-only">Message</label>
-                        <textarea
-                            name="contact-message"
-                            id="contactMessage"
-                            cols="30"
-                            rows="5"
-                            class="form-control"
-                            placeholder="Message"
-                            required
-                        ></textarea>
-                    </div>
-                    <button
-                        type="submit"
-                        class="btn btn-primary btn-block rounded w-lg"
-                    >
-                        Send Message
-                    </button>
-                </form>
+                <div class="row">
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="message" class="col-form-label">Message *</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                    <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+
+              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-success">
+                Your message was sent, thank you!
+              </div>
+
             </div>
-            <div class="contact-infos">
-                <div class="item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div class="">
-                        <h5>Location</h5>
-                        <p>Monument in Central Jakarta, Indonesia.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h5>Phone Number</h5>
-                        <p>+62 8953-4618-4632</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="fas fa-envelope"></i>
-                    <div class="mb-0">
-                        <h5>Email Address</h5>
-                        <p>ifhalf21@gmail.com</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div id="map" class="mt-5">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.3306904319713!2d106.826394!3d-6.176066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sus!4v1725469239586!5m2!1sen!2sus"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-    </div>
-</section>
-<!-- End of Contact Section -->
-
-<!-- Page Footer -->
-<footer class="page-footer">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-sm-6">
-                <p>
-                    Copyright
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    &copy;
-                    <a href="https://www.instagram.com/fhzz_21" target="_blank">Falls</a>
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <div class="socials">
-                    <a class="social-item" href="https://www.instagram.com/fhzz_21/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="social-item" href="mailto:ifhalf21@gmail.com">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a class="social-item" href="https://github.com/fallss/FrontEnd_Project">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="social-item" href="https://www.youtube.com/@ifhalf2165">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+    
+  
+</html>
