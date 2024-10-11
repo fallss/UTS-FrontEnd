@@ -337,7 +337,7 @@ span {
     }
   }
 
-
+/* Responsive styling */
 /* Styling untuk tablet */
 @media (max-width: 1024px) {
     .navbar {
@@ -348,26 +348,26 @@ span {
 
     .navbar ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
     }
 
     .kartu {
-        width: 40%; 
-        height: auto; 
+        width: 50%; /* Kurangi ukuran kartu untuk tablet */
+        height: auto; /* Sesuaikan ketinggian secara otomatis */
     }
 
     .card-container {
-        flex-direction: column;
+        flex-direction: column; /* Ubah menjadi kolom untuk tablet */
         align-items: center;
     }
 
     .card {
-        width: 100%; 
+        width: 90%%; /* Kurangi ukuran kartu untuk tablet */
     }
 
     .search-bar input {
-        width: 250px; 
+        width: 250px; /* Kurangi lebar input search di tablet */
     }
 }
 
@@ -410,23 +410,23 @@ span {
     }
 
     .kartu {
-        width: 90%; 
+        width: 90%; /* Sesuaikan ukuran kartu di mobile */
         margin: 10px;
     }
 
     .card-container {
-        flex-direction: column; 
+        flex-direction: column; /* Susun kartu menjadi satu kolom di mobile */
         align-items: center;
         padding: 10px;
     }
 
     .card {
-        width: 100%; 
+        width: 90%; /* Kurangi ukuran kartu untuk mobile */
         margin-bottom: 10px;
     }
 
     .search-bar input {
-        width: 200px; 
+        width: 200px; /* Kurangi lebar input search di mobile */
     }
     .cross {
         display: block;
@@ -436,8 +436,8 @@ span {
       }
 }
 
-
-@media (max-width: 400px) {
+/* Styling untuk layar yang sangat kecil */
+@media (max-width: 480px) {
     .navbar .logo img {
         height: 30px;
         width: 30px;
@@ -446,11 +446,9 @@ span {
     .navbar ul li {
         font-size: 12px;
     }
-    .card {
-        width: 100%;
-    }
+
     .card img {
-        width: 100px; 
+        width: 100px; /* Sesuaikan ukuran gambar di layar kecil */
     }
 
     .kartu h1, .card h1 {
@@ -460,7 +458,7 @@ span {
     .kartu p, .card p {
         font-size: 12px;
     }
-    
+
     .specification h1 {
         font-size: 16px;
     }
