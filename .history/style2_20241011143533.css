@@ -269,10 +269,3 @@ ion-icon.green {
 .island-popup * {
   pointer-events: none;
 }
-
-.menuopen {
-  display: none;
-}
-.cross {
-  display: none;
-}
