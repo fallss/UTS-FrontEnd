@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #353535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .logo img {
+  height: 35px;
+  width: 35px;
+}
+
+.navbar .nav-icons img {
+  height: 20px;
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  position: fixed;
+  background-color: white;
+  top: 0%;
+  width: 100%;
+  padding-bottom: 10px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin-left: 40px;
+  font-size: 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color:black;
+}
+
+.navbar ul li a:hover {
+  color: #007BFF; 
+}
+
+.navbar .nav-icons img {
+  height: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.menuopen {
+  display: none;
+}
+
+.cross {
+  display: none;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk rincian toko dan peta */
+    gap: 20px; /* Jarak antar box */
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    width: 100%;
+}
+
+.contact-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Rata kiri untuk teks */
+}
+
+.contact-box h2 {
+    margin-bottom: 10px;
+}
+
+.contact-box p,
+.contact-box span {
+    margin-bottom: 5px; /* Jarak antar elemen dalam box */
+}
+
+.map-container {
+    width: 100%; /* Memastikan peta penuh lebar box */
+}
+
+.map-container iframe {
+    border: none; /* Menghilangkan border dari iframe */
+    margin-top: 10px; /* Jarak atas untuk peta */
+    width: 100%; /* Memastikan peta responsif */
+}
+.footer {
+  text-align: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: relative; /* Ini untuk memastikan footer berada di bawah jika konten pendek */
+}

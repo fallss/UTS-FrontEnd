@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="./images/Logo15.png" alt="logo" /></a>
+        </div>
+        <ul id="nav-list">
+          <li><a href="android.html">Android</a></li>
+          <li><a href="ios.html">iOS</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <img class="cross" src="./images/close-116-512.png" alt="cross" />
+        </ul>
+        <div class="nav-icons">
+      
+          <img
+            class="menuopen"
+            src="./images/hamburger-menu-5.png"
+            alt="menu"
+          />
+        </div>
+      </div>
+
+      
+      <div class="back-videos">
+        <video autoplay loop muted playsinline>
+          <source src="./videos/iPhone Xr Official Trailer_1080p.mp4" />
+        </video>
+      </div>
+
+      <div class="section">
+        <div class="titles">
+          <h1>Store, The best way to buy the products you love.</h1>
+        </div>
+        <div class="services">
+          <img src="./images/Ask2.png" alt="service" />
+          <p>Need a Shopping help ?</p>
+          <a href="#">Ask a Specialist</a> <br />
+          <img src="./images/png-apple-logo-9711.png" alt="service" />
+          <p>Visit an Apple Store</p>
+          <a href="#">Find One Near You</a>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <img src="./images/5ec26e0b6c295800046c81db.png" alt="product" />
+          <a href="">Macbook</a>
+        </div>
+        <div class="product">
+          <img
+            src="./images/darkbomber-552585104b2a15720d3c0b661ce5945c.png"
+            alt="product"
+          />
+          <a href="">IPhone</a>
+        </div>
+        <div class="product">
+          <img src="./images/61d4a6218b51e20004664d4c.png" alt="product" />
+          <a href="">IPad</a>
+        </div>
+        <div class="product">
+          <img
+            src="./images/monitor.png"
+            alt="product"
+          />
+          <a href="">Monitor</a>
+        </div>
+        <div class="product">
+          <img src="./images/pngwing.com(1).png" alt="product" />
+          <a href="">New Phones</a>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <h2>The Latest. Take a look at what's new right now.</h2>
+        <div class="cards">
+          <div class="card">
+            <span>LIMETED TIME OFFER</span>
+            <h1>Save on Mac or IPad for University.</h1>
+            <p>You'll also save on Apple Pencil, Magic Keyboard for IPad.</p>
+            <img
+              src="./images/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg"
+              alt="macbook"
+            />
+          </div>
+          <div class="card">
+            <span>LIMETED TIME OFFER</span>
+            <h1>Macbook Air 15. Buy Now</h1>
+            <p>
+              You'll also save on Apple Pencil, Magic Keyboard for IPad, get 20%
+              off AppleCare+, and more.²
+            </p>
+            <img
+              src="./images/Apple-WWDC23-MacBook-Air-15-in-hero-230605.jpg.news_app_ed.jpg"
+              alt="macbook"
+            />
+          </div>
+          <div style="background: black" class="card">
+            <span style="color: white">LIMETED TIME OFFER</span>
+            <h1 style="color: white">Realease iPhone 15. Buy Now</h1>
+            <p style="color: white">
+              You'll also save on Apple Pencil, Magic Keyboard for IPad, get 20%
+              off AppleCare+, and more.²
+            </p>
+            <img
+              style="height: 190px"
+              src="./images/gsmarena_001.jpg"
+              alt="iphone"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="apple-events">
+        <h1>Let's Explore Apple Events</h1> 
+        <div class="event-pictures">
+          <img
+            src="./images/APPLE-EVENT-SEP-2023-WALLPAPER-mod1.jpg"
+            alt="events"
+          />
+          <img src="./images/apple-event-wallpaper-iphone.png" alt="events" />
+        </div>
+      </div>
+      <div class="section-3">
+        <img
+          src="./images/iphone-14-mockup-png-890-download-96223.png"
+          alt="phone"
+        />
+        <h1>
+          iPhone 14 Pro Leather Case <br />
+          with MagSafe - Ink
+        </h1>
+      </div>
+      
+   
+
+        <div class="footer">
+          <p>
+            Copyright © 2024 Apple Inc. All rights reserved. Privacy Policy
+            Terms of Use Sales Policy Legal Site Map
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let nav_list = document.getElementById("nav-list"); // Mendapatkan elemen dengan ID "nav-list" dan menyimpannya ke dalam variabel nav_list
+      let openMenu = document.querySelector(".menuopen"); //Mendapatkan elemen pertama dengan class "menuopen" dan menyimpannya ke dalam variabel openMenu
+      let cross = document.querySelector(".cross"); //Mendapatkan elemen pertama dengan class "cross" dan menyimpannya ke dalam variabel cross
+      openMenu.addEventListener("click", () => {    //Menambahkan event listener pada tombol openMenu untuk event "click"
+        nav_list.style.opacity = "100%";            //Mengatur opacity dari nav_list menjadi 100% (terlihat penuh) ketika openMenu diklik
+        openMenu.style.display = "none";            //Menyembunyikan tombol openMenu dengan mengatur display menjadi "none"
+      });
+      cross.addEventListener("click", () => {       //Menambahkan event listener pada tombol cross untuk event "click"
+        nav_list.style.opacity = "0%";              //Mengatur opacity dari nav_list menjadi 0% (tidak terlihat) ketika cross diklik
+        setTimeout(() => {                          //Setelah penundaan 400ms, menampilkan kembali tombol openMenu dengan mengatur display menjadi "block"
+          openMenu.style.display = "block";
+        }, 400);
+      });
+    </script>
+  </body>
+</html>
